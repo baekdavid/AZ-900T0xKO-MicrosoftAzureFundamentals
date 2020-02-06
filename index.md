@@ -1,25 +1,18 @@
----
-title: Online Hosted Instructions
+﻿---
+title: 온라인 호스팅 지침
 permalink: index.html
-layout: home
+layout: 홈
 ---
 
-# Content Directory
+# 콘텐츠 디렉터리
 
-Hyperlinks to each of the lab exercises and demos are listed below.
+각 연습에 대한 하이퍼링크. 강사는 연습을 데모 또는 학생 랩으로 사용할 수 있습니다. 
 
-## Labs
+## 연습
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
-| Module | Lab |
+{% assign wts = site.pages | where_exp:"page", "page.url contains '/Instructions/Walkthroughs'" %}
+| 모듈 | 연습 |
 | --- | --- | 
-{% for activity in labs  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
+{% for activity in wts %}| {{ activity.wts.module }} | [{{ activity.wts.title }}{% if activity.wts.type %} - {{ activity.wts.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
 
-## Demos
-
-{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| Module | Demo |
-| --- | --- | 
-{% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
