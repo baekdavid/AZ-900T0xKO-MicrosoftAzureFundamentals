@@ -2,7 +2,7 @@
 
 - **[연습 링크(HTML 형식)](https://microsoftlearning.github.io/AZ-900T0x-MicrosoftAzureFundamentals/)**
 - **[최신 연습 다운로드(Word 형식)](../../releases/latest)**
-- **MCT입니까?** - [MCT용 GitHub 사용자 가이드](https://microsoftlearning.github.io/MCT-User-Guide/) 를 검토하십시오.
+- **MCT입니까?** - [MCT용 GitHub 사용자 가이드](https://https://microsoftlearning.github.io/MCT-User-Guide-KO) 를 검토하십시오.
 - **랩 명령을 수동으로 빌드해야 합니까?** - [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) 리포지토리에서 명령을 사용할 수 있습니다.
 
 ## Microsoft의 역할
