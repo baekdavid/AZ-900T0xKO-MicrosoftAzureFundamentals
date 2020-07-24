@@ -1,7 +1,7 @@
 ﻿---
 title: 온라인 호스팅 지침
 permalink: index.html
-layout: 홈
+layout: home
 ---
 
 # 콘텐츠 디렉터리
