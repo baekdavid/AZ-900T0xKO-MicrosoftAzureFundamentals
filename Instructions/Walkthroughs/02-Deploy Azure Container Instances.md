@@ -1,12 +1,12 @@
 ﻿---
 wts:
     title: '02 - Azure Container Instances 배포'
-    module: '모듈 02 - 핵심 Azure 서비스'
+    module: '모듈 02 - Azure 핵심 서비스'
 ---
 
 # 02 - Azure Container Instances 배포
 
-이 연습에서는 Azure Portal에서 ACI(Azure Container Instances)에 Docker 컨테이너를 생성, 구성 및 배포합니다. 이 컨테이너는 정적 HTML 페이지를 표시하는 ACI 시작 웹 애플리케이션입니다. 
+이번 연습에서는 Azure Portal에서 ACI(Azure Container Instances)에 Docker 컨테이너를 생성, 구성 및 배포합니다. 이 컨테이너는 정적 HTML 페이지를 표시하는 ACI 시작 웹 애플리케이션입니다. 
 
 예상 시간: 20분.
 
@@ -22,31 +22,31 @@ wts:
 
 	| 설정| 값|
 	|----|----|
-	| 구독 | **보유한 구독 선택** |
+	| 구독 | **구독 중 선택** |
 	| 리소스 그룹 | **myRGContainer**(새로 만들기) |
 	| 컨테이너 이름| **mycontainer**|
 	| 지역 | **(미국) 미국 동부** |
 	| 컨테이너 이미지 유형| **공용**|
 	| 컨테이너 이미지| **microsoft/aci-helloworld**|
-	| 구독 | **보유한 구독 선택**|
+	| 구독 | **구독 중 선택**|
 	| OS 유형| **Linux** |
 	|||
 
 
-4. 네트워킹 탭을 구성합니다. 다른 모든 설정을 기본값으로 유지합니다.
+4. 네트워킹 탭을 구성합니다. 다른 모든 설정은 기본값으로 유지합니다.
 
 	| 설정| 값|
 	|--|--|
-	| DNS 이름 레이블| **mycontainerdnsxxx**(고유해야 함) |
+	| DNS 이름 레이블| **mycontainerdnsxxx**(고유명칭) |
 	|||
 	
-	**참고**: dns-name-label.region.azurecontainer.io에서 컨테이너에 공개적으로 연결할 수 있습니다. **DNS 이름 레이블을 사용할 수 없음** 이라는 오류 메시지가 표시되면 다른 DNS 이름 레이블을 지정하십시오.
+	**참고**: dns-name-label.region.azurecontainer.io에서 컨테이너에 공개적으로 접속 할 수 있습니다. **DNS 이름 레이블을 사용할 수 없음** 이라는 오류 메시지가 표시되면 다른 DNS 이름 레이블을 지정하십시오.
 
 	![Azure Portal 컨테이너 인스턴스 블레이드 만들기의 구성 창 스크린샷. DNS 이름 레이블이 입력되어 있습니다. ](../images/0201.png)
 
-5. **검토 후 만들기** 를 선택하여 자동 유효성 검사 프로세스를 시작합니다.
+5. **검토 및 생성** 를 선택하여 자동 유효성 검사 프로세스를 시작합니다.
 
-6. **만들기** 를 선택하여 컨테이너 인스턴스를 만듭니다. 
+6. **생성** 을 선택하여 컨테이너 인스턴스를 만듭니다. 
 
 7. 배포 페이지 및 **알림** 페이지를 모니터링합니다. 
 
